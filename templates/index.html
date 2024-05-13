@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Movie Recommendation System</h1>
+    </header>
     <form action="recommend", method="POST">
         <select name="rec" id="">
             {% for i in titles %}
@@ -14,5 +18,5 @@
         </select>
         <button type="submit">Recommend</button>
     </form>
-</body>
+    </body>
 </html>

@@ -16,7 +16,8 @@ def index():
 def recommend():
     rec = request.form['rec']
     recommend = rc.recommend(rec,6)
-    return f"{recommend}"
+    return render_template("recommendation.html",
+                           recommend=recommend)
 
 
 

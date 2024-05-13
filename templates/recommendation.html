@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <section class="cards">
+        {% for i in recommend.index[1:] %}
+            <h3>title : {{recommend.loc[i,'title']}}</h3>
+            <p>director : {{recommend.loc[i,'director']}}</p>
+            <p>country : {{recommend.loc[i,'country']}}</p>
+            <p>release year : {{recommend.loc[i,'release_year']}}</p>
+            <p>genres : {{recommend.loc[i,'listed_in']}}</p>
+        {% endfor %}
+    </section>
+</body>
+</html>

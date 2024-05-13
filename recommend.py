@@ -3,7 +3,6 @@ import pickle
 
 similarity_scores = pickle.load(open('./pickles/similarity_scores.pkl','rb'))
 result_df = pickle.load(open('./pickles/result_df.pkl','rb'))
-# pickle.dump(result_df['title'],open('./pickles/indices.pkl','wb'))
 df_copy= result_df.copy()
 df_copy.index = df_copy['title']
 df_copy=df_copy['director']
