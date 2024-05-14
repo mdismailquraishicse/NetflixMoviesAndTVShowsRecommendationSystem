@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Show details</title>
+</head>
+<body class="details" background="black">
+    <header><h1>Movie/TV Show Details</h1></header>
+    <div class="detail">
+        <h3>Title : {{df.loc['title']}}</h3>
+        <p>Releas year : {{df.loc['release_year']}}</p>
+        <p>Country : {{df.loc['country']}}</p>
+        <p>Genres : {{df.loc['listed_in']}}</p>
+        <p>Director : {{df.loc['director']}}</p>
+        <p>Casts : {{df.loc['cast']}}</p>
+        <p>Discription : {{df.loc['description']}}</p>
+    </div>
+    <footer class="foot-details">
+        <p>This website is created by : Md Ismail Quraishi</p>
+        <p>Email : mdismailquraishicse@gmail.com</p>
+        <p>Mobile : +91-8250285488</p>
+        <a href="https://github.com/mdismailquraishicse">Github : https://github.com/mdismailquraishicse </a>
+    </footer>
+</body>
+</html>
