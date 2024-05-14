@@ -22,7 +22,7 @@
     <section class="cards">
         {% for i in recommend.index[1:] %}
         <div class="card">
-                <h3>Title : <a href="{{ url_for('details', index=i )}}" class="mt">{{recommend.loc[i,'title']}}></a></h3>
+                <h3>Title : <a href="{{ url_for('details', index=i )}}" class="mt"> {{recommend.loc[i,'title']}} </a></h3>
                 <p>Director : {{recommend.loc[i,'director']}}</p>
                 <p>Country : {{recommend.loc[i,'country']}}</p>
                 <p>Release Year : {{recommend.loc[i,'release_year']}}</p>
